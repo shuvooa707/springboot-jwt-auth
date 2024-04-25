@@ -1,0 +1,34 @@
+###
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: shuvo
+    password: Alpha@123
+    url: jdbc:mysql://localhost:3306/jwtauthapp
+###
+  data:
+    jpa:
+      repositories:
+        enabled: true
+
+###
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+
+###
+server:
+  port: 7777
+
+
+logging:
+  level:
+    root: error
+
+
+
+### custom
+jwt:
+  token-validity: 3600000 # in milliseconds
